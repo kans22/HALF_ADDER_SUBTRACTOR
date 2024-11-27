@@ -34,7 +34,13 @@ Borrow = A’B
 Figure -02 HALF Subtractor
 
 **Truthtable**
+
+HALF ADDER
+
 ![Screenshot 2024-11-25 202405](https://github.com/user-attachments/assets/b8915e2b-b090-4f13-9696-20af6e21fe89)
+
+HALF SUBTRACTOR
+
 ![Screenshot 2024-11-25 202713](https://github.com/user-attachments/assets/46e5272a-b548-429c-a799-be47c7a8a865)
 
 **Procedure**
@@ -51,35 +57,39 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
+```
 HALF ADDER
-'''module ha (a,b,sum,carry);
+
+module ha (a,b,sum,carry);
 input a,b;
 output sum,carry;
 assign sum=a^b;
 assign carry=a&b;
 endmodule 
-'''
+
 HALF SUBTRACTOR
-'''
+
 module halfsub(a,b,difference,borrow);
 input a,b;
 output difference,borrow;
 assign difference= (a ^ b);
 assign borrow= ( ~a & b);
 endmodule
-'''
+
 Developed by:S KANUSHA SREE
 RegisterNumber:24001268
-
+```
 **RTL Schematic**
+
 HALF ADDER
 ![ha logicgate](https://github.com/user-attachments/assets/b50f5480-c955-4d3b-95bb-a3ec8e0290b7)
 HALF SUBTRACTOR
 ![halfsub logicgate](https://github.com/user-attachments/assets/6100edff-7872-4e40-8b8d-765751a02e2c)
 **Output/TIMING Waveform**
+
 HALF ADDER
 ![ha waveform](https://github.com/user-attachments/assets/c4797977-8242-4e0a-a613-11469f0dc21f)
-HALFSUBTRACTOR
+HALF SUBTRACTOR
 ![halfsub waveform](https://github.com/user-attachments/assets/6ae1a278-fd3a-426a-b09b-1f07b5d49a32)
 **Result:**
 Designed a half adder and half subtractor circuit and verified its truth table in Quartus using Verilog programming.
